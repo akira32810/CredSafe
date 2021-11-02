@@ -48,8 +48,7 @@ namespace CredSafeDotnetCore.Controllers
         public async Task<IActionResult> TestingIP()
         {
 
-            // bool blob = CreateToken.ValidateToken("DNZce4awkwETbOyVcf8yLDtHZfx8bdAfBXqjekZZ6Nw=:SNqGpYOipptN3lsSZ4Aj494JlMtmAg3Eg6rRHba7mYksfCKejSXVzl+zj3u/XN+p:PostmanRuntime/7.11.0:Rn1bMOjoCNneR1tykmytIm8DUA6qZrcUE0kHoThA05ZiZASjuDvPyPDK8+6GBuEh", GetIPAddr(), GetUserAgent());
-            // Cryptography.Decrypt<AesManaged>(cRModel.CRPass, _keys.KeyEnc, _keys.Salt);
+             // Cryptography.Decrypt<AesManaged>(cRModel.CRPass, _keys.KeyEnc, _keys.Salt);
             //   return Json(new { result = UserInfo.GetRemoteIPAddress(blob,true) });
 
             var ip = HttpContext.Connection.RemoteIpAddress.ToString();
